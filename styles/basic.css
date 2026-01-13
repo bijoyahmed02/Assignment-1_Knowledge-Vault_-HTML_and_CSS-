@@ -297,22 +297,21 @@ nav .menu a{
 }
 
 #footer .footer-container{
-    width: 83%;
+    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
 }
 
-/* .footer-container{
+.footer-container{
     background-color: #001931;
     color: #ffffff;
-} */
+} 
 
 .footer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:120px 120px 80px;
-    background-color: #001931;
     color: #ffffff;
 }
 
@@ -342,6 +341,5 @@ nav .menu a{
     font-size: 16px;
     color: #FAFAFA;
     padding: 30px;
-    background-color: #001931;
     color: #ffffff;
 }
