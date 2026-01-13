@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: 0;
 }
-/* share style */
 .font-open-inter{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -55,14 +54,14 @@ nav .menu a{
     text-decoration: none;
     color: #000000;
 }
-#first-section {
+#first-section .container{
     width: 83%;
-    display: flex;
     max-width: 1600px;
     min-height: 435px;
     margin: 0 auto;
     background: url("../assets/hero-bg.png") no-repeat center / cover;
-    color: white;
+    /* background-repeat: no-repeat; */
+    color: white; 
 }
 
 .container {
@@ -76,18 +75,20 @@ nav .menu a{
     vertical-align: middle;
 }
 
-.btn {
+.btn-access {
     border: none;
-    cursor: pointer;
+    font-weight: bold;
     font-size: 16px;
-    border-radius: 15px;
-    padding: 16px 16px;
-}
-
-.badge {
+    padding: 8px 12px;
+    height: 35px;
+    width: 229px;
     background-color:  #ffffff;
     color: #30b868;
     margin-bottom: 20px;
+    border-radius: 15px;
+}
+.btn-access:hover{
+    background-color: #77c78f;  
 }
 
 .first-content-text h1 {
@@ -116,10 +117,10 @@ nav .menu a{
 .primary {
     background-color: #30b868;
     color: white;
-    border-radius: 5px;
     font-size: 16px;
-    font-weight: 189px;
-    padding: 16px 16px;
+    height: 52px;
+    width: 251px;
+    padding: 12px 16px;
 }
 
 .outline {
@@ -127,8 +128,9 @@ nav .menu a{
     border: 1px solid white;
     color: white;
     border-radius: 5px;
+    height: 52px;
+    width: 198px;
     font-size: 16px;
-    font-weight: 189px;
     padding: 16px 16px;
 }
 #about .about-container h2{
@@ -187,6 +189,7 @@ nav .menu a{
 
 #solution .solution-container{
     width: 83%;
+    max-width: 1600px;
     margin:120px auto 120px;
     display: flex;
     gap: 60px;
@@ -230,20 +233,20 @@ nav .menu a{
 
 }
 
-.access{
-    background-color: #ffffff;
-    margin: 120px 120px;
+#access .access-section {
+    width: 83%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .access-box {
-    width: 83%;
-    max-width: 1600px;
     background-color: #F7F6F2;
     text-align: center;
     padding: 80px;
-    margin: 0 auto;
+    margin: 120px 120px;
     padding: 80px;
 }
+
 
 .access-box h1 {
     font-size: 40px;
@@ -293,50 +296,52 @@ nav .menu a{
     color: #6b7280;
 }
 
-
-
-/* 
-.text-center{
-    text-align: center;
-}
-footer{
-    margin-top: 130px;
-    background-color: #FFF8F3;
-    padding: 130px 0;
-}
- footer .footer-container{
-    width: 59%;
-    max-width: 1140px;
+#footer .footer-container{
+    width: 83%;
+    max-width: 1600px;
     margin: 0 auto;
+}
+
+/* .footer-container{
+    background-color: #001931;
+    color: #ffffff;
+} */
+
+.footer-top {
     display: flex;
-    gap: 116px;
+    justify-content: space-between;
+    align-items: center;
+    padding:120px 120px 80px;
+    background-color: #001931;
+    color: #ffffff;
+}
 
- }
- .footer-container h2{
-    color: #181818;
-    font-size: 35px;
-    margin-bottom: 20px;
+.footer-left img{
+    height: 60px;
+    width: 139px;
+}
 
- }
- .footer-container .social{
-    max-width: 562px;
- }
- .footer-container .social p{
-    color: #474747;
-    font-size: 16px;
-    margin-bottom: 30px;
+
+.footer-right h3 {
+    font-size: 20px;
     line-height: 28px;
+    margin-bottom: 16px;
+    padding-right: 107px;
+}
 
- }
- .footer-container .icon a{
-    margin-left: 24px;
+.social-icons a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    text-decoration: none;
+}
 
- }
- .footer-container form input[type="text"], .footer-container form textarea{
-    width: 461px;
-    padding: 18px 31px;
-    margin-bottom: 24px;
-    border: none;
-    border-radius: 5px;
-    color: #757575;
- } */
+.footer-bottom {
+    text-align: center;
+    font-size: 16px;
+    color: #FAFAFA;
+    padding: 30px;
+    background-color: #001931;
+    color: #ffffff;
+}
